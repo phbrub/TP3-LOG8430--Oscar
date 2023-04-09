@@ -1,12 +1,13 @@
 #!/bin/bash
 
 echo "Running this script will install Docker and docker-compose, and then restart the machine. SSH connection will be lost."
-read -p "Do you want to continue? (y/n) " answer
+read -p "Do you want to continue? [Y/n] " answer
 
 if [ "$answer" == "y" ] || [ "$answer" == "Y" ]; then
     # Install Docker
     sudo apt-get update
     sudo apt-get install docker.io -y
+    sudo usermod -aG docker ${USER}
 
     # Install docker-compose
     sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
