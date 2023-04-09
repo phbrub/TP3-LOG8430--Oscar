@@ -7,7 +7,7 @@ sudo apt-get install build-essential
 sudo apt install npm
 
 
-# git clone https://github.com/hyperledger/caliper-benchmarks.git
+cd hyperledger_fabric
 
 git submodule add https://github.com/hyperledger/caliper-benchmarks.git
 cd caliper-benchmarks/
@@ -19,7 +19,7 @@ npm install --only=prod @hyperledger/caliper-cli@0.4
 cd networks/fabric/config_solo_raft/
 ./generate.sh
 cd
-cd TP3-LOG8430-Oscar/caliper-benchmarks/
+cd TP3-LOG8430-Oscar/hyperledger_fabric/caliper-benchmarks/
 
 # Installer les images docker  projet nécessaire 
 sudo docker pull hyperledger/fabric-ccenv:1.4.4
