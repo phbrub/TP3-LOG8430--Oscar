@@ -18,7 +18,7 @@ The ideal setup to use the script is:
     
     cd TP3-LOG8430-Oscar
     
-    chmod +x docker_setup.sh mongo_setup.sh
+    chmod +x docker_setup.sh mongo_setup.sh hyperledger_fabric_setup.sh
     
     ./docker_setup.sh
     
