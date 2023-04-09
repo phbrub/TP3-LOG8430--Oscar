@@ -6,7 +6,7 @@ sudo apt install nodejs
 sudo apt-get install build-essential
 sudo apt install npm
 
-git submodule add 
+
 # git clone https://github.com/hyperledger/caliper-benchmarks.git
 
 git submodule add https://github.com/hyperledger/caliper-benchmarks.git
@@ -19,7 +19,7 @@ npm install --only=prod @hyperledger/caliper-cli@0.4
 cd networks/fabric/config_solo_raft/
 ./generate.sh
 cd
-cd caliper-benchmarks/
+cd TP3-LOG8430-Oscar/caliper-benchmarks/
 
 # Installer les images docker  projet nécessaire 
 sudo docker pull hyperledger/fabric-ccenv:1.4.4
@@ -38,7 +38,7 @@ cd Python-2.7.18/
 make
 sudo make install
 sudo ln -sf /usr/local/bin/python2.7 /usr/bin/python
-python --version 
+
 cd ..
 npm rebuild grpc --force
 

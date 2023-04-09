@@ -24,3 +24,5 @@ The ideal setup to use the script is:
     
     ./mongo_setup.sh
 
+    ./hyperledger_fabric_setup.sh
+
