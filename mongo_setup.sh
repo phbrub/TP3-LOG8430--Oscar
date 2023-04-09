@@ -16,7 +16,6 @@ curl -O --location https://github.com/brianfrankcooper/YCSB/releases/download/0.
 tar xfvz ycsb-0.17.0.tar.gz
 
 mkdir -p ycsb-0.17.0/database
-cp docker-compose-mongodb.yml ycsb-0.17.0/database/
-cd ycsb-0.17.0/database
-docker-compose -f docker-compose-mongodb.yml up -d
+cp mongo/docker-compose-mongodb.yml ycsb-0.17.0/database/
+docker-compose -f ycsb-0.17.0/database/docker-compose-mongodb.yml up -d
 
