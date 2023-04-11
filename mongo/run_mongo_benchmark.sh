@@ -53,4 +53,4 @@ printf "Run - Workload F iteration $i\n\n" >> ../results/run.csv
 
 done
 
-printf "MongoDB benchmarking was successfully completed. Results are available in the /results/ folder."
+printf "MongoDB benchmarking was successfully completed. Results are available in the /results/ folder.\n\n"
