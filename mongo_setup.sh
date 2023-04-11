@@ -21,7 +21,7 @@ mkdir -p ycsb-0.17.0/database
 cp docker-compose-mongodb.yml ycsb-0.17.0/database/
 docker-compose -f ycsb-0.17.0/database/docker-compose-mongodb.yml up -d
 
-sleep 120
+sleep 60
 
 docker exec -it primary mongosh --eval 'rs.initiate({ _id: "myReplicaSet", members: [ {_id: 0, host: "primary"}, {_id: 1, host: "mongo1"}, {_id: 2, host: "mongo2"}, {_id: 3, host: "mongo3"} ] })'
 
