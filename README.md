@@ -13,6 +13,9 @@ The ideal setup to use the script is:
 - Configuration storage : 1x 30 GiB gp2
 
 
+Afterwards, you can make an SSH connection to this machine before taking the next actions.
+
+
 ## Configure machine
     git clone https://github.com/phbrub/TP3-LOG8430-Oscar.git
     
