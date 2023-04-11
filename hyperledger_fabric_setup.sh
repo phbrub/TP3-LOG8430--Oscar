@@ -2,9 +2,9 @@
 
 #Installer node et npm
 sudo apt-get update
-sudo apt install nodejs
-sudo apt-get install build-essential
-sudo apt install npm
+sudo apt install -y nodejs
+sudo apt-get install -y build-essential
+sudo apt install -y npm
 
 
 cd hyperledger_fabric
