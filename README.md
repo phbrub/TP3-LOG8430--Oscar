@@ -31,4 +31,4 @@ Afterwards, you can make an SSH connection to this machine before taking the nex
 
   #### Notes
   - The machine will reboot after executing .docker_setup.sh. Please note that it may take some time before the SSH connection becomes available again.
-  - Prior to running mongo_setup.sh, make sure to navigate back into the THP3-LOG8430-Oscar repository.
+  - Prior to running mongo_setup.sh, make sure to navigate back into the TP3-LOG8430-Oscar repository.
