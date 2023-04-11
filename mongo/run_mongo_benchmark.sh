@@ -1,4 +1,4 @@
-printf "\nRunning Benchmarks on Mongo DB...\n\n"
+printf "\nRunning Benchmarks on MongoDB...\n\n"
 
 cd /home/ubuntu/TP3-LOG8430-Oscar/mongo
 
