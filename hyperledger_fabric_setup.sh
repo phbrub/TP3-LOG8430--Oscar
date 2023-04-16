@@ -45,6 +45,3 @@ npm rebuild grpc --force
 
 #Donner les bonne permissions à la vm
 sudo chmod 777 /var/run/docker.sock
-
-#Déployer le projet :
-sudo npx caliper launch manager --caliper-workspace . --caliper-benchconfig benchmarks/samples/fabric/marbles/config.yaml --caliper-networkconfig networks/fabric/v1/v1.4.4/2org1peercouchdb_raft/fabric-go-tls-solo.yaml
