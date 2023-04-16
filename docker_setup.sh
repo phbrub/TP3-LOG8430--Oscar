@@ -3,7 +3,7 @@
 echo "Running this script will install Docker and docker-compose, and then restart the machine. SSH connection will be lost."
 read -p "Do you want to continue? [Y/n] " answer
 
-if [ "$answer" == "y" ] || [ "$answer" == "Y" ]; then
+if [[ "$answer" == [Yy] || "$answer" == [Yy][Ee][Ss] ]]; then
     # Install Docker
     sudo apt-get update
     sudo apt-get install docker.io -y
