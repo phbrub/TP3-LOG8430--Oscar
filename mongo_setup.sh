@@ -38,15 +38,3 @@ do
     echo "fieldlength=100" >> "$file"
     printf "Changing workloads in $file\n"
 done
-
-# Télécharger et installer la bonne version de python
-wget https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tgz
-tar -xvf Python-2.7.18.tgz
-cd Python-2.7.18/
-./configure
-make
-sudo make install
-sudo ln -sf /usr/local/bin/python2.7 /usr/bin/python
-
-cd ..
-npm rebuild grpc --force
