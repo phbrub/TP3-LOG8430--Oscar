@@ -52,3 +52,7 @@ chmod +x benchmark_workers_workloads.sh
 chmod +x benchmark_compare_workloads.sh
 chmod +x run_benchmark_3_times.sh
 cd ..
+
+cd
+cd TP3-LOG8430-Oscar/hyperledger_fabric
+mkdir results

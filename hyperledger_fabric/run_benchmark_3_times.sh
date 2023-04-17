@@ -24,6 +24,5 @@ do
   echo "-------------------"
   echo ""
   npx caliper launch manager --caliper-workspace . --caliper-benchconfig benchmarks/samples/fabric/marbles/config.yaml --caliper-networkconfig networks/fabric/v1/v1.4.4/2org1peercouchdb_raft/fabric-go-tls-solo.yaml    
-  cp report.html "../results/$1-Iteration $i.html"
-done
+  cp report.html "../results/result_$(basename "$1" | cut -d'.' -f1)-Iteration_$i.html"done
 cd ..
