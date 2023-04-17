@@ -19,9 +19,9 @@ else
     echo "Installation cancelled. No changes were made."
 fi
 
-The modified script uses curl to download the latest release of docker-compose from GitHub and save it in the /usr/local/bin directory. It then sets the executable permission for the docker-compose binary file. After that, it restarts the machine.
+# The modified script uses curl to download the latest release of docker-compose from GitHub and save it in the /usr/local/bin directory. It then sets the executable permission for the docker-compose binary file. After that, it restarts the machine.
 
-Note that this script installs a specific version of docker-compose (version 1.29.2 at the time of writing). If you want to install a different version, you can modify the download URL accordingly.
+# Note that this script installs a specific version of docker-compose (version 1.29.2 at the time of writing). If you want to install a different version, you can modify the download URL accordingly.
 
 
 

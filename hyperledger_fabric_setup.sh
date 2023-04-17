@@ -46,5 +46,13 @@ npm rebuild grpc --force
 #Donner les bonne permissions à la vm
 sudo chmod 777 /var/run/docker.sock
 
-#Déployer le projet :
-sudo npx caliper launch manager --caliper-workspace . --caliper-benchconfig benchmarks/samples/fabric/marbles/config.yaml --caliper-networkconfig networks/fabric/v1/v1.4.4/2org1peercouchdb_raft/fabric-go-tls-solo.yaml
+cd hyperledger_fabric
+chmod +x benchmark_TPS_workloads.sh
+chmod +x benchmark_workers_workloads.sh
+chmod +x benchmark_compare_workloads.sh
+chmod +x run_benchmark_3_times.sh
+cd ..
+
+cd
+cd TP3-LOG8430-Oscar/hyperledger_fabric
+mkdir results
