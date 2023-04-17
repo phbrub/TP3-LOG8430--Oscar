@@ -49,3 +49,13 @@ class QueryWorkload extends WorkloadModuleBase {
         await this.sutAdapter.sendRequests(args);
     }
 }
+
+/**
+ * Create a new instance of the workload module.
+ * @return {WorkloadModuleInterface}
+ */
+function createWorkloadModule() {
+    return new QueryWorkload();
+}
+
+module.exports.createWorkloadModule = createWorkloadModule;
