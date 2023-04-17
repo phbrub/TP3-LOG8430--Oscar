@@ -48,3 +48,4 @@ sudo chmod 777 /var/run/docker.sock
 
 chmod +x hyperledger_fabric/stop_monitor.sh
 chmod +x hyperledger_fabric/monitor_resources.sh
+chmod +x hyperledger_fabric/run_hyperledger_fabric_benchmark.sh

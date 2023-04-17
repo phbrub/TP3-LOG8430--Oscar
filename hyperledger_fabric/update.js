@@ -29,7 +29,7 @@ class TransactionWorkload extends WorkloadModuleBase {
             contractId: 'marbles',
             contractVersion: 'v1',
             contractFunction: 'transferMarble',
-            contractArguments: [marbleName, newOwner],
+            contractArguments: [marbleName.toString(), newOwner.toString()],
             timeout: 30
         };
 

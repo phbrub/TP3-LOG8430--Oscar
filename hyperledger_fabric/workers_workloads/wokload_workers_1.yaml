@@ -11,11 +11,11 @@ test:
           tps: 25
       workload:
         module: benchmarks/samples/fabric/marbles/init.js
-    - label: read
-      txNumber: 499
+    - label: query
+      txNumber: 500
       rateControl:
         type: fixed-rate
         opts:
           tps: 25
       workload:
-        module: benchmarks/samples/fabric/marbles/read.js
+        module: benchmarks/samples/fabric/marbles/query.js

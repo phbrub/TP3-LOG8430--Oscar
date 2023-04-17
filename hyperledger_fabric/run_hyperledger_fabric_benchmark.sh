@@ -7,6 +7,7 @@ echo =========================================================== INIT_READ =====
 echo ===========================================================================================================================================================
 #read_init
 cp init_read_config.yaml  caliper-benchmarks/benchmarks/samples/fabric/marbles/config.yaml
+cp init.js  caliper-benchmarks/benchmarks/samples/fabric/marbles/init.js   
 cp read.js caliper-benchmarks/benchmarks/samples/fabric/marbles/read.js
 
 # for i in {1..5}
@@ -20,11 +21,11 @@ cp read.js caliper-benchmarks/benchmarks/samples/fabric/marbles/read.js
 #     npx caliper launch manager --caliper-workspace . --caliper-benchconfig benchmarks/samples/fabric/marbles/config.yaml --caliper-networkconfig networks/fabric/v1/v1.4.4/2org1peercouchdb_raft/fabric-go-tls-solo.yaml    
 # done
 
-./monitor_resources.sh
+# ./monitor_resources.sh
 cd caliper-benchmarks
 npx caliper launch manager --caliper-workspace . --caliper-benchconfig benchmarks/samples/fabric/marbles/config.yaml --caliper-networkconfig networks/fabric/v1/v1.4.4/2org1peercouchdb_raft/fabric-go-tls-solo.yaml    
 cd ..
-./stop_monitor.sh
+# ./stop_monitor.sh
 
 #read_init
 cp init_read_update_config.yaml  caliper-benchmarks/benchmarks/samples/fabric/marbles/config.yaml
