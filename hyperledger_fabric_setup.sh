@@ -46,6 +46,8 @@ npm rebuild grpc --force
 #Donner les bonne permissions à la vm
 sudo chmod 777 /var/run/docker.sock
 
-chmod +x hyperledger_fabric/stop_monitor.sh
-chmod +x hyperledger_fabric/monitor_resources.sh
-chmod +x hyperledger_fabric/run_hyperledger_fabric_benchmark.sh
+
+chmod +x hyperledger_fabric/benchmark_TPS_workloads.sh
+chmod +x hyperledger_fabric/benchmark_workers_workloads.sh
+chmod +x hyperledger_fabric/benchmark_compare_workloads.sh
+chmod +x hyperledger_fabric/run_benchmark_3_times.sh

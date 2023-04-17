@@ -20,7 +20,10 @@ cd caliper-benchmarks
 
 for i in {1..3}
 do
-  echo "Iteration $i"
+  echo "$1  -  Iteration $i"
+  echo "-------------------"
+  echo ""
   npx caliper launch manager --caliper-workspace . --caliper-benchconfig benchmarks/samples/fabric/marbles/config.yaml --caliper-networkconfig networks/fabric/v1/v1.4.4/2org1peercouchdb_raft/fabric-go-tls-solo.yaml    
+  cp report.html "../results/$1-Iteration $i.html"
 done
 cd ..
